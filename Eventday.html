@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Event Day in the Philippines</title>
+    <link rel="stylesheet" href="inq1.css">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('eventimages.jpg'); /* Replace with your image URL */
+            background-size: cover; /* Ensures the image covers the entire page */
+            background-position: center; /* Centers the image */
+            background-attachment: fixed; /* Keeps the background fixed during scrolling */
+            color: white; /* White text color for contrast against the background */
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+        header {
+            background-color: rgba(44, 62, 80, 0.7); /* Transparent dark background for header */
+            color: rgb(255, 255, 255);
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.9); /* Light background for content sections */
+            border-radius: 8px;
+            padding: 20px;
+        }
+        .event {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            padding: 20px;
+        }
+        .event h2 {
+            font-size: 24px;
+            color: #34495e;
+        }
+        .event p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #000000;
+        }
+        .event-time {
+            font-size: 16px;
+            color: #2980b9;
+        }
+        .event-location {
+            font-size: 16px;
+            color: #27ae60;
+        }
+        .schedule {
+            background-color: #000000;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .schedule h3 {
+            margin: 0;
+            font-size: 20px;
+            color: #2980b9;
+        }
+        .schedule ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .schedule li {
+            padding: 10px;
+            border-bottom: 1px solid #bdc3c7;
+        }
+        .schedule li:last-child {
+            border-bottom: none;
+        }
+        .filter-section {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .filter-select {
+            padding: 10px;
+            font-size: 16px;
+            width: 250px;
+            border-radius: 5px;
+            border: 1px solid #bdc3c7;
+        }
+        footer {
+            background-color: rgba(44, 62, 80, 0.7);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    
+<header>
+   
+    <h1>Event Day in the Philippines</h1>
+</header>
+<a href="1.html"><button class="btn">Homepage</button></a> 
+<div class="container">
+    <section class="filter-section">
+        <h3>Filter Events</h3>
+        <label for="event-filter">Select Event Type or Location:</label>
+        <select id="event-filter" class="filter-select" onchange="scrollToEvent()">
+            <option value="all">All Events</option>
+            <option value="fiesta">Fiesta</option>
+            <option value="music">Music Festival</option>
+            <option value="food">Food Expo</option>
+            <option value="manila">Manila</option>
+            <option value="cebu">Cebu</option>
+        </select>
+    </section>
+
+    <!-- Event 1 -->
+    <div id="fiesta" class="event">
+        <h2>Fiesta Celebration</h2>
+        <p class="event-time"><strong>Date:</strong> December 15, 2024 | <strong>Time:</strong> 9:00 AM - 5:00 PM</p>
+        <p class="event-location"><strong>Location:</strong> Plaza Mayor, Manila</p>
+        <p><strong>Description:</strong> A vibrant fiesta showcasing Filipino culture with food, music, and traditional dances. Experience the spirit of the Philippines with a parade, performances, and games for all ages.</p>
+
+        <div class="schedule">
+            <h3>Event Schedule</h3>
+            <ul>
+                <li><strong>9:00 AM:</strong> Opening Ceremony</li>
+                <li><strong>10:00 AM:</strong> Parade</li>
+                <li><strong>12:00 PM:</strong> Traditional Dance Performances</li>
+                <li><strong>1:00 PM:</strong> Lunch Break (Free Filipino Food Sampling)</li>
+                <li><strong>2:00 PM:</strong> Local Music Performances</li>
+                <li><strong>4:00 PM:</strong> Games & Activities</li>
+                <li><strong>5:00 PM:</strong> Closing Remarks</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Event 2 -->
+    <div id="music" class="event">
+        <h2>Music Fest 2024</h2>
+        <p class="event-time"><strong>Date:</strong> December 15, 2024 | <strong>Time:</strong> 6:00 PM - 10:00 PM</p>
+        <p class="event-location"><strong>Location:</strong> Ayala Center, Cebu</p>
+        <p><strong>Description:</strong> A night of live performances by top Filipino bands and artists. Join us for an unforgettable music festival featuring various genres including pop, rock, and indie.</p>
+
+        <div class="schedule">
+            <h3>Event Schedule</h3>
+            <ul>
+                <li><strong>6:00 PM:</strong> Opening Act</li>
+                <li><strong>7:00 PM:</strong> Band Performance 1</li>
+                <li><strong>8:00 PM:</strong> Band Performance 2</li>
+                <li><strong>9:00 PM:</strong> Headliner Performance</li>
+                <li><strong>10:00 PM:</strong> Event Conclusion</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Event 3 -->
+    <div id="food" class="event">
+        <h2>Food Expo 2024</h2>
+        <p class="event-time"><strong>Date:</strong> December 15, 2024 | <strong>Time:</strong> 10:00 AM - 4:00 PM</p>
+        <p class="event-location"><strong>Location:</strong> SMX Convention Center, Pasay</p>
+        <p><strong>Description:</strong> A food lover's paradise! Taste traditional Filipino dishes and discover new food trends at this exciting food expo. Meet local chefs and enjoy interactive cooking demos and workshops.</p>
+
+        <div class="schedule">
+            <h3>Event Schedule</h3>
+            <ul>
+                <li><strong>10:00 AM:</strong> Opening & Welcome Remarks</li>
+                <li><strong>11:00 AM:</strong> Filipino Food Cooking Demo</li>
+                <li><strong>1:00 PM:</strong> Food Tasting Session</li>
+                <li><strong>2:00 PM:</strong> Workshop: Street Food of the Philippines</li>
+                <li><strong>4:00 PM:</strong> Closing Ceremony</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>For more details, visit our <a href="http://www.eventwebsite.com" target="_blank" style="color: #ecf0f1;">official website</a>.</p>
+</footer>
+
+<script>
+    function scrollToEvent() {
+        const selectedEvent = document.getElementById('event-filter').value;
+        if (selectedEvent !== "all") {
+            const eventSection = document.getElementById(selectedEvent);
+            eventSection.scrollIntoView({ behavior: "smooth" });
+        }
+    }
+</script>
+
+</body>
+</html>

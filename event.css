@@ -1,0 +1,86 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Events Section */
+.events {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 20px;
+    text-align: center;
+    background-image: url('background-events.jpg'); /* Add your background image URL here */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.event-item {
+    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency to show background */
+    padding: 20px;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.event-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Initially hide the description and image */
+.event-item .description, .event-item .event-image {
+    display: none;
+}
+
+.event-item .inquire {
+    font-size: 1rem;
+    color: #ffcc00;
+    text-decoration: none;
+    margin-top: 10px;
+    display: block;
+}
+
+.event-item .inquire:hover {
+    text-decoration: underline;
+}
+
+/* Slide-down Animation */
+.event-item.open .description,
+.event-item.open .event-image {
+    display: block;
+    animation: slideDown 0.5s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Image Styling */
+.event-item .event-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.event-item.open .event-image {
+    opacity: 1;
+}

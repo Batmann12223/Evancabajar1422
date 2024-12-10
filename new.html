@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Philippines Tour Packages</title>
+        <link rel="stylesheet" href="new.css">
+    </head>
+    <body>
+        <a href="1.html"><button class="btn">Back-to-home</button></a>
+        <div class="container">
+            <header>
+                <h1>Taking you to the best places of the Philippines</h1>
+            </header>
+     <!-- Destination Selection -->
+     <section id="destination-selection">
+        <h2>Destinations</h2>
+        <div class="selection-bar">
+            <label for="destination-dropdown"></label>
+            <select id="destination-dropdown" multiple>
+                <option value="Coron">Coron</option>
+                <option value="Boracay">Boracay</option>
+                <option value="Cebu">Cebu</option>
+                <option value="Bohol">Bohol</option>
+                <option value="Siargao">Siargao</option>
+            </select>
+            <label for="start-date">Travel Dates:</label>
+            <input type="date" id="start-date" placeholder="Start Date">
+            <input type="date" id="end-date" placeholder="End Date">
+            <label for="guest-count">Guests:</label>
+            <input type="number" id="guest-count" placeholder="Number of Guests" min="1" max="20">
+        </div>
+    </section>
+
+    <!-- Package Customization (Initially hidden) -->
+    <section id="package-customization" class="hidden">
+        <h2>Select Your Package</h2>
+        <div class="packages">
+            <div class="package" data-price="1500">
+                <h3>Package 1: Coron Adventure & Relaxation</h3>
+                <p>Duration: 14 Days / 13 Nights</p>
+                <p>Price per person: $1,500 USD</p>
+                <div class="package-details">
+                    <p><strong>Inclusion:</strong></p>
+                    <ul>
+                        <li>Airport Transfers</li>
+                        <li>4-Star Hotel Accommodation</li>
+                        <li>Day Trip to Kayangan Lake</li>
+                        <li>Snorkeling Experience</li>
+                        <li>Island Hopping Tour</li>
+                    </ul>
+                    <p><strong>Day-by-Day Activities:</strong></p>
+                    <ul>
+                        <li>Day 1: Arrival & Relaxation</li>
+                        <li>Day 2-3: Island Hopping</li>
+                        <li>Day 4-5: Beach Time & Snorkeling</li>
+                        <li>Day 6-7: Visit Kayangan Lake & More</li>
+                    </ul>
+                </div>
+                <button class="select-package" data-package="1">Select</button>
+            </div>
+
+            <div class="package" data-price="1800">
+                <h3>Package 2: Eco-Luxury Coron Experience</h3>
+                <p>Duration: 14 Days / 13 Nights</p>
+                <p>Price per person: $1,800 USD</p>
+                <div class="package-details">
+                    <p><strong>Inclusion:</strong></p>
+                    <ul>
+                        <li>Private Eco-Friendly Accommodation</li>
+                        <li>Organic Meals</li>
+                        <li>Sunset Cruise</li>
+                        <li>Guided Eco Tour</li>
+                    </ul>
+                    <p><strong>Day-by-Day Activities:</strong></p>
+                    <ul>
+                        <li>Day 1: Arrival & Welcome Dinner</li>
+                        <li>Day 2-3: Eco Tour</li>
+                        <li>Day 4-5: Sunset Cruise & Beach Time</li>
+                        <li>Day 6-7: Guided Nature Hike</li>
+                    </ul>
+                </div>
+                <button class="select-package" data-package="2">Select</button>
+            </div>
+
+            <div class="package" data-price="2400">
+                <h3>Package 3: VIP Luxury Retreat</h3>
+                <p>Duration: 14 Days / 13 Nights</p>
+                <p>Price per person: $2,400 USD</p>
+                <div class="package-details">
+                    <p><strong>Inclusion:</strong></p>
+                    <ul>
+                        <li>Luxury Resort Stay</li>
+                        <li>Private Yacht Charter</li>
+                        <li>Spa Treatments</li>
+                        <li>Exclusive Fine Dining Experiences</li>
+                    </ul>
+                    <p><strong>Day-by-Day Activities:</strong></p>
+                    <ul>
+                        <li>Day 1: Arrival & VIP Welcome</li>
+                        <li>Day 2-3: Private Yacht Tour</li>
+                        <li>Day 4: Spa & Sauna</li>
+                        <li>Day 5:  Yoga & Wellness</li>
+                        <li>Day 6-7: Exclusive Dining Experiences</li>
+                    </ul>
+                </div>
+                <button class="select-package" data-package="3">Select</button>
+            </div>
+         
+        </div>
+    </section>
+
+    <!-- Itinerary Preview -->
+    <section id="itinerary-preview">
+        <h2>Itinerary Preview</h2>
+        <div id="itinerary-details">
+            <p>No selections yet.</p>
+        </div>
+    </section>
+
+<!-- Booking and Payment Section -->
+<section id="booking-payment">
+    <h2>Booking and Payment</h2>
+    <p>Total Price: <span id="total-price">$0 USD</span></p>
+    <a href="payment.html" id="book-now-link">
+        <button id="book-now">Book Now</button>
+    </a>
+</section>
+
+<script src="new.js"></script>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Booking System</title>
+    <link rel="stylesheet" href="bstyles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="1.html"><button class="btn">Homepage</button></a>
+        <header>
+            <h1>Book Your Appointment</h1>
+        </header>
+
+        <section class="booking-form">
+            <h2>Booking Details</h2>
+            <form id="bookingForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Select Date</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="time">Select Time</label>
+                    <select id="time" name="time" required>
+                        <option value="9:00 AM">9:00 AM</option>
+                        <option value="10:00 AM">10:00 AM</option>
+                        <option value="11:00 AM">11:00 AM</option>
+                        <option value="12:00 PM">12:00 PM</option>
+                        <option value="1:00 PM">1:00 PM</option>
+                        <option value="2:00 PM">2:00 PM</option>
+                        <option value="3:00 PM">3:00 PM</option>
+                        <option value="4:00 PM">4:00 PM</option>
+                    </select>
+                </div>
+
+                <button type="submit">Confirm Booking</button>
+            </form>
+        </section>
+
+        <!-- Booking Confirmation Message (Initially hidden) -->
+        <section class="confirmation-message" id="confirmationMessage" style="display: none;">
+            <h2>Booking Confirmed!</h2>
+            <p id="confirmationDetails"></p> <!-- Placeholder for booking details -->
+        </section>
+    </div>
+
+    <script src="3.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>

@@ -1,0 +1,93 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light gray background for the page */
+    color: #333;
+    background-image: url('backgroundpackages.png'); /* Add your background image URL here */
+    background-size: cover; /* Make sure the background covers the entire page */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+/* Packages Section */
+.packages-info {
+    background-color: #fff; /* White background for the section */
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.9); /* Slight opacity to allow background image to show through */
+}
+
+/* Inquiry Form */
+.inquiry-form {
+    margin-top: 30px;
+}
+
+.inquiry-form form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.inquiry-form input, .inquiry-form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.inquiry-form button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    background-color: #ffcc00;
+    color: #333;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.inquiry-form button:hover {
+    background-color: #e6b800;
+}
+
+/* Loading Message */
+.loading-message {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #888;
+}
+
+/* Confirmation/Error Message */
+.confirmation-message {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.confirmation-message p {
+    margin: 10px 0;
+}
+
+.confirmation-message strong {
+    color: #ffcc00;
+}
+
+.confirmation-message em {
+    color: #555;
+}
+.btn {
+    background-color: #08eedb;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}

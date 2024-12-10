@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philippine Food Menu and Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+        nav {
+            background-color: #8B0000;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #FFD700;
+        }
+        section {
+            padding: 40px 20px;
+            margin: 20px 0;
+        }
+        #menu {
+            background-color: #FCE4D6;
+        }
+        #gallery {
+            background-color: #FDEBD0;
+        }
+        .menu-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .menu-list ul {
+            list-style: none;
+            padding: 0;
+        }
+        .menu-list li {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .gallery-images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        .gallery-images img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .gallery-images img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    
+    <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="1.html">Homepage</a></li>
+        </ul>
+    </nav>
+
+    <section id="menu">
+        <h2 style="text-align: center;">Philippine Food Menu</h2>
+        <div class="menu-list">
+            <ul>
+                <li>Adobo - A savory and tangy dish made with chicken or pork.</li>
+                <li>Sinigang - A sour soup with tamarind and vegetables, often with pork or shrimp.</li>
+                <li>Lechon - A whole roasted pig, crispy on the outside and juicy inside.</li>
+                <li>Kare-Kare - A peanut-based stew served with oxtail and vegetables.</li>
+                <li>Halo-Halo - A popular dessert made with crushed ice, milk, and various sweet toppings.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2 style="text-align: center;">Gallery</h2>
+        <p style="text-align: center;">Experience the beauty of Philippine cuisine through images.</p>
+        <div class="gallery-images">
+            <img src="adobo.jpg" alt="Adobo">
+            <img src="Sinigang-Recipe.jpg" alt="Sinigang">
+            <img src="whole-lechon.jpg" alt="Lechon">
+            <img src="OIP.jpg" alt="Kare-Kare">
+            <img src="halohalo.jpg" alt="Halo-Halo">
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,194 @@
+/* Basic styles for layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+body {
+    background-image: url('philippines1.jpg');
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Destination selection styles */
+#destination-selection {
+    margin-bottom: 20px;
+}
+
+.selection-bar {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.selection-bar label {
+    font-weight: bold;
+}
+
+.selection-bar input,
+.selection-bar select {
+    padding: 8px;
+    font-size: 16px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#destination-dropdown {
+    width: 200px;
+}
+
+#start-date, #end-date, #guest-count {
+    width: auto;
+    min-width: 120px;
+}
+
+/* Package customization styles */
+.packages {
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    justify-content: space-around; /* Distribute packages evenly */
+    margin-top: 20px;
+}
+
+.package {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: left;
+    flex: 1; /* Allow each package to take equal width */
+    min-width: 250px; /* Set a minimum width */
+    max-width: 300px; /* Optional: Max width to prevent too large a display */
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Ensure button stays below content */
+    justify-content: space-between;
+}
+
+.package h3 {
+    margin-bottom: 10px;
+}
+
+.package-details {
+    display: block;
+    margin-top: 10px;
+}
+
+button {
+    width: 100%;
+    margin-top: 10px; /* Space out the button */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Minimize/Maximize feature */
+.hidden-details {
+    display: none;
+}
+
+.toggle-details {
+    background-color: #f1f1f1;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.toggle-details:hover {
+    background-color: #ddd;
+}
+
+/* Itinerary preview */
+#itinerary-preview {
+    margin-top: 30px;
+}
+
+#itinerary-details {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Booking and payment section */
+#booking-payment {
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+}
+
+#total-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e0e0e0;
+    
+}
+
+button#book-now {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button#book-now:hover {
+    background-color: #45a049;
+}
+
+.hidden {
+    display: none;
+}
+/* Booking Form */
+#booking-form {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#booking-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#booking-form button {
+    background-color: #28a745;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Confirmation Message */
+#confirmation-message {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #e7f4e7;
+    padding: 20px;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+}
